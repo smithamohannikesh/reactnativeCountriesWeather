@@ -16,34 +16,33 @@ export const Weather=()=>{
   }else{
     icons= weather.weather_icons.map((icon:any) => <Image key={icon} style={{width: 20, height:20}} source={{uri:icon}}/>)    ;
   }
- // icons= weather.weather_icons.map((icon:any) => <Image key={icon} style={{width: 20, height:20}} source={{uri:icon}}/>)
     
     return(
       <View style={Styles.container}>
      
       <View style={Styles.listDisplay}>
-        <View style={Styles.pb}>
+        <View style={Styles.itemRaw}>
           <Text>
-            <Text style={Styles.mr}>temperature: </Text>
+            <Text style={Styles.label}>temperature: </Text>
             <Text>{weather.temperature}</Text>
           </Text>
         </View>
-        <View style={Styles.pb}>
+        <View style={Styles.itemRaw}>
         <Text>
-            <Text style={Styles.mr}>Weather Icons: </Text>
+            <Text style={Styles.label}>Weather Icons: </Text>
               {weather.weather_icons.map((icon:any) => <Image key={icon} style={{width: 20, height:20}} source={{uri:icon}}/>)}
           </Text>
         
         </View>
-        <View style={Styles.pb}>
+        <View style={Styles.itemRaw}>
           <Text>
-            <Text style={Styles.mr}>Wind Speed: </Text>
+            <Text style={Styles.label}>Wind Speed: </Text>
             <Text>{weather.wind_speed}</Text>
           </Text>
         </View>
-        <View style={Styles.pb}>
+        <View style={Styles.itemRaw}>
           <Text>
-            <Text style={Styles.mr}>Precip: </Text>
+            <Text style={Styles.label}>Precip: </Text>
             <Text>{weather.precip}</Text>
           </Text>
         </View>
@@ -55,7 +54,10 @@ export const Weather=()=>{
 
 const Styles = StyleSheet.create({
     container: {
-      padding: 20
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
     },
     flag: {
       width: 30,
@@ -64,11 +66,14 @@ const Styles = StyleSheet.create({
     listDisplay: {
       padding: 50
     },
-    pb: {
-      paddingBottom: 10
+    itemRaw: {
+      paddingBottom: 10,
+      
     },
-    mr: {
+    label: {
       fontWeight: 'bold',
+      
+      
      
     }
   });

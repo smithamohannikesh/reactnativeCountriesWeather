@@ -32,13 +32,20 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
     },
     input :{
-        backgroundColor:'gray',
-        margin:10
+        borderColor: '#7a42f4',
+        borderWidth: 1,
+        margin:10,
+        width:'100%',
+        height:40,
     },
     button:{
-        padding:5,
+        
         margin:10,
-        backgroundColor:'blue'
+        height:40,
+        width:'100%',
+        backgroundColor: '#7a42f4',
+        padding: 10,
+        
     }
   });
   

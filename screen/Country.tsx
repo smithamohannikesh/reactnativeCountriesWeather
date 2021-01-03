@@ -49,9 +49,11 @@ const styles = StyleSheet.create({
         margin:10
     },
     button:{
-        padding:5,
         margin:10,
-        backgroundColor:'blue'
+        height:40,
+        width:'100%',
+        backgroundColor: '#7a42f4',
+        padding: 10,
     }
   });
   

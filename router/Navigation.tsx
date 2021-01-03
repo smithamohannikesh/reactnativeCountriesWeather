@@ -18,7 +18,7 @@ const Navigation=()=>{
                        {
                            title:"Home",
                            headerStyle:{
-                               backgroundColor:'grey'
+                               backgroundColor:'#7a42f4'
                            }
                        }
                    }
@@ -31,7 +31,7 @@ const Navigation=()=>{
                        {
                            title:"Country",
                            headerStyle:{
-                               backgroundColor:'grey'
+                               backgroundColor:'#7a42f4'
                            }
                        }
                    }
@@ -44,7 +44,7 @@ const Navigation=()=>{
                        {
                            title:"Weather",
                            headerStyle:{
-                               backgroundColor:'grey'
+                               backgroundColor:'#7a42f4'
                            }
                        }
                    }
